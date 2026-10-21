@@ -1,4 +1,4 @@
-
+/*estilizacion del header y banner principal*/
 .header {
   position:sticky;
   top: 0;
@@ -19,7 +19,18 @@
   gap: 10px;
   margin-left: 300px;
 }
+.skip-link{
+  background-color: #818181;
+  color: #e7e7e7;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 550px;
+  padding: 5px;
 
+
+}
 .navegacion-link{
   background-color: #616161;
   color: #e7e7e7;
@@ -66,4 +77,32 @@
   width: 80px;
   height: 80px;
   object-fit: contain;
+}
+/*estilizacion del inicio*/
+.inicio{
+  font-size: 1.2rem;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner-libros{
+  width: 550px;
+  height: 400px;
+  object-fit:cover;
+}
+.button-catalogo{
+  background-color:#61616161;
+  color:#272727;
+  border-radius:10px;
+  padding:10px;
+  text-decoration:none;
+  gap:10px;
+}
+.button-catalogo:hover{
+  background-color:#131313;
+  color:#272727;
+  text-decoration:none;
+  transition:0.3s;
 }

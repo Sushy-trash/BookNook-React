@@ -4,9 +4,10 @@ export default function Header(){
     const [open, setOpen] = useState(false);
     return(
         <>
-            <a className="skip-link" href="#contenido">Saltar Contenido</a>
+           
             <header className="header">
-                <Logo/>
+                <a className="skip-link" href="#contenido"><Logo/></a>
+                
                 <nav className="header-navegacion">
                     <a className="navegacion-link" href="#inicio">inicio</a>
                     <a className="navegacion-link" href="#catalogo">catalogo</a>
