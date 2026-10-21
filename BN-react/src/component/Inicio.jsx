@@ -1,5 +1,4 @@
-
-
+import gif from "../assets/persona leyendo.mp4";
 
 export default function Inicio() {
     return (
@@ -27,16 +26,17 @@ export default function Inicio() {
                             alt="Banner de libros"
                             className="banner-libros"
                         />
-
-
                     </div>
 
 
 
                 </div>
-
+                
+                <h1>Explora un mundo LLeno de Creatividad y misterios inexplicables</h1>
+                <video className="gif" src="./src/assets/persona leyendo.mp4" loop autoPlay muted playsInline></video>
+                
             </div>
-
+            
 
 
             
