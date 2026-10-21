@@ -1,29 +1,69 @@
-.container {
-  max-width: 1160px;
-}
+
 .header {
   position:sticky;
   top: 0;
   background-color: #818181;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   border-bottom: 1px solid #515250;
   backdrop-filter: blur(12px);
+  gap: 5px;
 }
 .header-navegacion{
-  display: flex;
+  display: Inline-flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 85px;
+  width: 30px;
+  height: 30px;
+  font-size: 1.6rem;
+  gap: 10px;
+  margin-left: 300px;
 }
 
 .navegacion-link{
-  background-color: #f52727;
-  color: #f52727;
+  background-color: #616161;
+  color: #e7e7e7;
   text-decoration:none;
-  font-size: 16px;
-  padding: 10px;
-  border-radius:6px;
-  transition: background-color 0.2s;
+  font-size: 20px;
+  padding:  5px;
+  border-radius:10px;
   display: inline-block;
+}
+.navegacion-link:hover{
+  background-color: #131313;
+  color: #dfdfdf;
+  transition: 0.3s;
+}
+.header-boton{
+  background-color: #616161;
+  color: #e7e7e7;
+  text-decoration:none;
+  font-size: 20px;
+  padding:  5px;
+  border:#616161;
+  border-radius:10px;
+  display: inline-block;
+}
+.header-boton a{
+  color: #e7e7e7;
+  text-decoration:none;
+}
+.header-boton:hover{
+  background-color: #131313;
+  text-decoration:none;
+  color: #dfdfdf;
+  transition: 0.3s;
+}
+
+.logo{
+  font-size: 1.2rem;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-booknook{
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
 }
