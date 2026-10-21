@@ -5,51 +5,17 @@ export default function Header(){
     return(
         <>
             <a classname="skip-link" href="#contenido">Saltar Contenido</a>
-            <header classname="barra-navegacion">
-                    <nav classname="navbar navbar-expand-md container" 
-                        aria-label="Navegacion Principal">
-                        <a classname="navbar-brand" 
-                        href="#Inicio"
-                        aria-label="BookNook-el espacio de tu literatura Fantastica,inicio">
-                            <Logo/>
-                        </a>
-                        <button classname="navbar-toggler"
-                        type="button"
-                        aria-control="menu-principal"
-                        aria-expanded={open}
-                        aria-label="Abrir o cerrar el menu"
-                        onClick={() => setOpen(!open)}>
-                            <span classname="navbar-toggler-icon"/>
-                        </button>
+            <header classname="header">
+                <nav classname="header-navegacion">
+                    <a classname="navegacion-link" href="#inicio">inicio</a>
+                    <a classname="navegacion-link" href="#catalogo">catalogo</a>
+                    <a classname="navegacion-link" href="#nosotros">nosotros</a>
+                    <a classname="navegacion-link" href="/admin.html">Admin</a>
 
-                        <div id="menu-link"
-                        classname={`collapse navbar-collapse ${open ? 'show' : ''}`}>
-                            <ul classname="navbar-nav" ms-auto align-items-md-center- gap-md-4>
-                                {[
-                                    ['inicio','Inicio'],
-                                    ['catalogo','Catalogo'],
-                                    ['nosotros','Nosotros'],
-                                    
-                                ].map(([id, label]) => (
-                                    <li classname="nav-item" key={id}>
-                                        <a classname="nav-link" href={`#${id}`}>{label}</a>
-                                    </li>
-                                ))}
-                                <li classname="nav-item">
-                                    <a classname="nav-link" href="/admin.html">
-                                        Administrador
-                                    </a>
-                                </li>
-                                <li classname="nav-item">
-                                    <a classname="btn btn-grey nav-contact"
-                                    href="#contacto"
-                                    onClick={() => setOpen(false)}>
-                                        Contactanos
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                </nav>
+                <button className="header-boton" onClick={() => setOpen(!open)}>
+                    <a classname="btn-login "href="#login">Login</a>
+                </button>
             </header>
         
         </>

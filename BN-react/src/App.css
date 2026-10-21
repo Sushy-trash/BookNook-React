@@ -1,150 +1,29 @@
-/* Contenedor general y encabezado */
 .container {
   max-width: 1160px;
 }
-.NavegacionPrincipal {
-  position: sticky;
+.header {
+  position:sticky;
   top: 0;
-  z-index: 100;
-  background: #4b4b4bef;
-  border-bottom: 1px solid #242424;
+  background-color: #818181;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #515250;
   backdrop-filter: blur(12px);
 }
-.navbar {
+.header-navegacion{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   min-height: 85px;
 }
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  font-weight: 800;
-  font-size: 1.7rem;
-  letter-spacing: -0.06em;
-}
-.logo-booknook {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background: #7c7c7c;
-  color: #313131;
-  width: 36px;
-  height: 36px;
-  border-radius: 9px;
-  font-size: 1.6rem;
-}
-.brand-dot {
-  font-size: 0.7rem;
-  align-self: flex-start;
-  margin-top: 8px;
-  letter-spacing: 0;
-}
-.nav-link {
-  font-size: 0.9rem;
-  color: #53564e;
-}
-.btn {
-  border-radius: 6px;
-  padding: 0.8rem 1.3rem;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-.btn-dark {
-  background: #292e24;
-  border-color: #292e24;
-}
-.btn-dark:hover {
-  background: #898a89;
-  border-color: #b8b8b8;
-}
-/* Inicio: presentación, portada y beneficios */
-.hero-section {
-  background: #f5f6ee;
-  padding-top: 70px;
-}
-.eyebrow {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  margin-bottom: 20px;
-  color: #65734b;
-}
-h1 {
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.065em;
-}
-h1 span {
-  color: #718a3c;
-}
-.hero-description {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #6b7063;
-  max-width: 420px;
-  margin: 25px 0 30px;
-}
-.hero-note {
-  font-size: 0.75rem;
-  color: #6b7063;
-  margin-top: 35px;
-}
-.hero-image-wrap {
-  position: relative;
-  border-radius: 15px;
-  overflow: hidden;
-  background: #e5e9d9;
-  height: 445px;
-}
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 50px 25px 95px;
-  mix-blend-mode: multiply;
-}
-.hero-image-label {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  padding: 15px 22px;
-  border-radius: 8px;
-  background: #fffffff2;
-}
-.hero-image-label small,
-.hero-image-label strong {
-  display: block;
-}
-.hero-image-label small {
-  font-size: 0.7rem;
-  color: #626956;
-}
-.hero-image-label strong {
-  font-size: 1.15rem;
-}
-.hero-sticker {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  background: #dce7ad;
-  border-radius: 50%;
-  width: 86px;
-  height: 86px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: rotate(12deg);
-  font-weight: 800;
-  font-size: 0.85rem;
-}
-.benefits {
-  margin-top: 65px;
-  padding: 25px 0;
-  border-top: 1px solid #dfe3d4;
-  font-size: 0.85rem;
-}
-.benefits span {
-  color: #68794c;
-  font-size: 0.7rem;
-  margin-right: 15px;
+
+.navegacion-link{
+  background-color: #f52727;
+  color: #f52727;
+  text-decoration:none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius:6px;
+  transition: background-color 0.2s;
+  display: inline-block;
 }
