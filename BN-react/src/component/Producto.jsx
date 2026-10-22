@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import "./producto.css";
+import "./Producto.css";
 
 export default function Producto({ producto,onVerDetalles }) {
     const [errorImagen, setErrorImagen] = useState(false);
@@ -36,7 +36,7 @@ export default function Producto({ producto,onVerDetalles }) {
                     ${Number(producto.precio).toLocaleString("es-CL")}
                 </p>
 
-                <button className="producto-boton" type="button" onClick={onVerDetalles}>
+                <button className="producto-boton" onClick={onVerDetalles}>
                     Ver detalles
                 </button>
             </div>

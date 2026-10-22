@@ -62,7 +62,7 @@
 /* Categoría */
 .producto-categoria {
     margin-bottom: 8px;
-    color: #818181;
+    color: #474747;
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
@@ -91,13 +91,15 @@
     padding: 10px 15px;
     border: none;
     border-radius: 6px;
-    background-color: #777;
-    color: #ffffff;
+    background-color: #474747;
+    color: white;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
+    
+
 
 .producto-boton:hover {
     background-color: #818181;
