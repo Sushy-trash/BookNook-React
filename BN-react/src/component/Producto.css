@@ -1,0 +1,105 @@
+/* Tarjeta completa */
+.producto-card {
+    height: 100%;
+    border: 1px solid #e0d8ce;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fffdf9;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto al pasar el mouse */
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+/* Contenedor de la portada */
+.producto-imagen-contenedor {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background-color: #f0ebe4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Imagen del producto */
+.producto-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+/* Reemplazo si falta la imagen */
+.producto-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #777;
+    font-size: 14px;
+}
+/* Contenido de la tarjeta */
+.producto-card .card-body {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* Categoría */
+.producto-categoria {
+    color: #8a6246;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-bottom: 8px;
+}
+
+/* Nombre del producto */
+.producto-card .card-title {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+/* Precio */
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #33251c;
+    margin-bottom: 16px;
+}
+/* Botón */
+.producto-boton {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #33251c;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+/* Hover del botón */
+.producto-boton:hover {
+    background-color: #674832;
+}
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) {
+    .producto-imagen-contenedor {
+        height: 230px;
+    }
+
+    .producto-card .card-title {
+        font-size: 17px;
+    }
+
+    .producto-precio {
+        font-size: 18px;
+    }
+}
