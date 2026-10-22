@@ -6,7 +6,7 @@ export default function Header(){
         <>
            
             <header className="header">
-                <a className="skip-link" href="#contenido"><Logo/></a>
+                <a className="skip-link" href="#inicio"><Logo/></a>
                 
                 <nav className="header-navegacion">
                     <a className="navegacion-link" href="#inicio">Inicio</a>

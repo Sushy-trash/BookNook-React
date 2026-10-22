@@ -4,20 +4,25 @@ import Header from './component/Header'
 import Inicio from './component/Inicio'
 import Catalogo from './component/Catalogo'
 import Nosotros from './component/Nosotros'
+import Footer from './component/Footer'
 function App() {
   const [count, setCount] = useState(0)
   return (
     <>
       <Header/>
       
-
-      <Inicio/>
-
-
-      <Catalogo/>
+      <main>
+        <Inicio/>
 
 
-      <Nosotros/>
+        <Catalogo/>
+
+
+        <Nosotros/>
+
+      </main>
+      
+      <Footer/>
     </>
   )
 }

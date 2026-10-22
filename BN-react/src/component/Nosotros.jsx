@@ -16,11 +16,10 @@ export default function Nosotros(){
                         alt="gif represetnativo del compañero">
                     </img>
                     <h3>Sushy-Trash</h3>
-                    <p>
-                        Friki n1
-                        Especialista en Mangas, Cómics y en hacer bonita la página. 
-                        CEO de Polystation
-                    </p>
+                    <p>Friki n1</p>
+                    <p>Especialista en Mangas, Cómics y en hacer bonita la página. </p>
+                    <p>CEO de Polystation</p>
+                    
                 </article>
                 <article className="nosotros-integrante">
                     <img src="./src/assets/mapache gif.gif"
@@ -28,11 +27,11 @@ export default function Nosotros(){
                         alt="gif representativo de la compañera">
                     </img>
                     <h3>Schatten7u7</h3>
-                    <p>
-                        Queen ñoñística.
-                        Especialista en Novelas, Fantasía y Sci-Fi, además de hacer que la página funcione (spoiler,funciona mejor que el anterior). 
-                        Ministra de Defensa de Lemuria
-                    </p>
+                    <p>Queen ñoñística.</p>
+                    <p>Especialista en Novelas, Fantasía y Sci-Fi.</p>
+                    <p>Encargada de hacer que la página funcione (spoiler,funciona mejor que el anterior). </p>
+                    <p>Ministra de Defensa de Lemuria</p>
+                    
 
                 </article>
 

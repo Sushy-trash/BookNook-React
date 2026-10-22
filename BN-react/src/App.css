@@ -20,7 +20,7 @@ section h2 + p {
 
 /*estilizacion del header y banner principal*/
 .header {
-  position:sticky;
+  
   z-index: 1000;
   top: 0;
   background-color: #818181;
@@ -194,11 +194,48 @@ section h2 + p {
 
 .nosotros-integrante p {
     line-height: 1.7;
-    color: #555;
+    color: #e6e6e6;
+    display: flex;
+    
 }
 
 @media (max-width: 600px) {
     .nosotros-equipo {
         grid-template-columns: 1fr;
     }
+}
+
+
+/* Estilización del footer */
+.footer-site{
+  background-color: #818181;
+  width: 100%;
+  
+  margin: 0px;
+  padding: 0px;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer-mark{
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  gap: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.footer-logo{
+  width: 70px;
+  height: 70px;
+}
+
+.footer-menu{
+  display: flex;
+  justify-content: flex-end;
+  align-items:start;
+  gap: 20px;
 }
