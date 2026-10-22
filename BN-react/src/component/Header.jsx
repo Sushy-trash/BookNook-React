@@ -1,16 +1,25 @@
 import { useState } from 'react';
 import Logo from "./Logo";
-import "./Logo.css";
-
 export default function Header(){
+    const [open, setOpen] = useState(false);
     return(
         <>
-            <header classname="bg-grey text-white text-center py-5">
-                <div classname= "container">
-                    <Logo/>
+           
+            <header className="header">
+                <a className="skip-link" href="#inicio"><Logo/></a>
+                
+                <nav className="header-navegacion">
+                    <a className="navegacion-link" href="#inicio">Inicio</a>
+                    <a className="navegacion-link" href="#catalogo">Catalogo</a>
+                    <a className="navegacion-link" href="#nosotros">Nosotros</a>
+                    <a className="navegacion-link" href="/admin.html">Admin</a>
+                    <button className="header-boton" onClick={() => setOpen(!open)}>
+                        <a href="#login">Login</a>
+                    </button>
+        
 
-                </div>
-
+                </nav>
+                
             </header>
         
         </>

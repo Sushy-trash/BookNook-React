@@ -1,0 +1,126 @@
+
+.producto-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    border: 1px solid #ddd5c9;
+    border-radius: 12px;
+    background-color: #fffdf9;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Contenedor de la imagen */
+.producto-imagen-contenedor {
+    width: 100%;
+    height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+    background-color: #f5efe6;
+}
+
+/* Imagen del producto */
+.producto-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Cuando la imagen no está disponible */
+.producto-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: #777;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Información de la tarjeta */
+.producto-card .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Categoría */
+.producto-categoria {
+    margin-bottom: 8px;
+    color: #474747;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Nombre del producto */
+.producto-card .card-title {
+    margin-bottom: 12px;
+    color: #141414;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Precio */
+.producto-precio {
+    margin-top: auto;
+    margin-bottom: 15px;
+    color: #0e0d0d;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Botón */
+.producto-boton {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #474747;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+    
+
+
+.producto-boton:hover {
+    background-color: #818181;
+}
+
+.producto-boton:focus-visible {
+    outline: 3px solid #818181;
+    outline-offset: 3px;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 576px) {
+    .producto-imagen-contenedor {
+        height: 230px;
+    }
+
+    .producto-card .card-title {
+        font-size: 18px;
+    }
+
+    .producto-precio {
+        font-size: 20px;
+    }
+}

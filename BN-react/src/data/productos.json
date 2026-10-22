@@ -1,0 +1,51 @@
+[
+   {
+        "id": 1,
+        "nombre": "El nombre del viento",
+        "categoria": "Fantástica & Sci-Fi",
+        "precio": 18990,
+        "imagen": "./src/assets/el nombre delviento.jpg",
+        "descripcion": "Una novela de fantasía que narra la historia de Kvothe y su camino por un mundo lleno de magia, música y misterios."
+    },
+    {
+        "id": 2,
+        "nombre": "Death Note",
+        "categoria": "Mangas & Comics",
+        "precio": 12990,
+        "imagen": "./src/assets/death note.jpg",
+        "descripcion": "Manga que cuenta la historia de un estudiante que encuentra un misterioso cuaderno capaz de acabar con la vida de cualquier persona."
+    },
+    {
+        "id":3,
+        "nombre":"Coraline",
+        "categoria":"Novelas",
+        "precio":10990,
+        "imagen":"./src/assets/coraline.jpg",
+        "descripcion": "Una historia de fantasía y misterio sobre una niña que descubre una puerta hacia un mundo aparentemente perfecto."
+    },
+    {   
+        "id":4,
+        "nombre":"Jujutsu Kaisen",
+        "categoria":"Mangas & Comics",
+        "precio":9990,
+        "imagen":"./src/assets/jujutsu kaisen.jpg",
+        "descripcion":"Manga de acción y fantasía protagonizado por Yuji Itadori y su enfrentamiento contra las maldiciones."
+    },
+    {   
+        "id":5,
+        "nombre":"El Hobbit",
+        "categoria":"Fantástica & Sci-Fi",
+        "precio":15990,
+        "imagen":"./src/assets/el hobbit.jpg",
+        "descripcion":"La aventura de Bilbo Bolsón, quien abandona la tranquilidad de su hogar para embarcarse en una gran aventura."
+    },
+    {   
+        "id":6,
+        "nombre":"La Biblioteca de Medianoche",
+        "categoria":"Novelas",
+        "precio":16990,
+        "imagen":"./src/assets/la biblioteca de la medianoche.jpg",
+        "descripcion":"Una novela sobre las posibilidades de la vida y las decisiones que pueden cambiar nuestro camino."
+    }
+    
+]

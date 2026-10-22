@@ -1,13 +1,10 @@
-import "./Logo.css";
-export default function Logo() {
+
+export default function Logo({ className = '' }) {
     return(
         <>
-            <span>
-                <img src="./src/assets/logo booknook.png" className="logo-booknook"  alt="Booknook logo" />
-            </span>
-
-            <span classname ="Nombre del proyecto">
-                BookNook-Tu espacio de literatura fantastica
+            <span className={`logo ${className}`.trim()}>
+                <img src="./src/assets/logo booknook.png" className="logo-booknook"/>
+                BookNook-El espacio de Literatura Fantástica.
             </span>
         </>
     );
