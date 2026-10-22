@@ -1,6 +1,7 @@
 /*estilizacion del header y banner principal*/
 .header {
   position:sticky;
+  z-index: 1000;
   top: 0;
   background-color: #818181;
   padding: 10px;

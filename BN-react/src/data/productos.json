@@ -12,7 +12,7 @@
         "nombre": "Death Note",
         "categoria": "Mangas & Comics",
         "precio": 12990,
-        "imagen": "./src/assets/death note.jpg.jpg",
+        "imagen": "./src/assets/death note.jpg",
         "descripcion": "Manga que cuenta la historia de un estudiante que encuentra un misterioso cuaderno capaz de acabar con la vida de cualquier persona."
     },
     {

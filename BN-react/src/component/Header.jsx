@@ -9,9 +9,9 @@ export default function Header(){
                 <a className="skip-link" href="#contenido"><Logo/></a>
                 
                 <nav className="header-navegacion">
-                    <a className="navegacion-link" href="#inicio">inicio</a>
-                    <a className="navegacion-link" href="#catalogo">catalogo</a>
-                    <a className="navegacion-link" href="#nosotros">nosotros</a>
+                    <a className="navegacion-link" href="#inicio">Inicio</a>
+                    <a className="navegacion-link" href="#catalogo">Catalogo</a>
+                    <a className="navegacion-link" href="#nosotros">Nosotros</a>
                     <a className="navegacion-link" href="/admin.html">Admin</a>
                     <button className="header-boton" onClick={() => setOpen(!open)}>
                         <a href="#login">Login</a>

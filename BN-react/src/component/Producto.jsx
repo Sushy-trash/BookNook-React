@@ -1,48 +1,45 @@
-import "./producto.css"
-export default function Producto({productos}){
+
+import { useState } from "react";
+import "./producto.css";
+
+export default function Producto({ producto }) {
     const [errorImagen, setErrorImagen] = useState(false);
 
-    return(
+    return (
         <article className="card producto-card">
             <div className="producto-imagen-contenedor">
-                {productos.imagen && !errorImagen?(
+                {producto.imagen && !errorImagen ? (
                     <img
-                        src={productos.imagen}
-                        alt={productos.nombre}
+                        src={producto.imagen}
+                        alt={producto.nombre}
                         className="producto-imagen"
                         loading="lazy"
-                        onError={()=>setErrorImagen(true)}
+                        onError={() => setErrorImagen(true)}
                     />
-                ):(
+                ) : (
                     <div className="producto-placeholder">
                         Imagen no disponible
                     </div>
                 )}
             </div>
+
             <div className="card-body">
                 <p className="producto-categoria">
-                    {productos.categoria}
+                    {producto.categoria}
                 </p>
 
                 <h3 className="card-title">
-                    {productos.nombre}
+                    {producto.nombre}
                 </h3>
 
                 <p className="producto-precio">
-                    ${Number(productos.precio).toLocaleString("es-CL")}
+                    ${Number(producto.precio).toLocaleString("es-CL")}
                 </p>
 
-                <button className="producto-boton">
+                <button className="producto-boton" type="button">
                     Ver detalles
                 </button>
             </div>
-
-            
         </article>
-
-
-
-    )
-
-
+    );
 }
