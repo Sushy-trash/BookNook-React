@@ -142,3 +142,63 @@ section h2 + p {
   object-fit: cover;
 
 }
+
+/*estilizacion de seccion Nosotros*/
+
+#nosotros {
+  padding: 70px 0;
+  background-color: #f5efe6;
+  text-align: center; 
+  scroll-margin-top: 200px;
+
+}
+
+.nosotros h2 {
+    margin-bottom: 15px;
+}
+
+.about-us {
+  font-style: italic;
+  max-width: 650px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+.integrantes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.nosotros-integrante {
+  padding: 25px;
+  background-color: #50504f;
+  color: #e7e7e7;
+  border-radius: 12px;
+  border: 1px solid #ddd5c9;
+  font-style: italic;
+  
+}
+
+.nosotros-gif {
+    width: 100%;
+    max-width: 220px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.nosotros-integrante h3 {
+    margin-bottom: 12px;
+}
+
+.nosotros-integrante p {
+    line-height: 1.7;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .nosotros-equipo {
+        grid-template-columns: 1fr;
+    }
+}
