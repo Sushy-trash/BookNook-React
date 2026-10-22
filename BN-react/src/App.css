@@ -228,6 +228,10 @@ section h2 + p {
   margin: 0px;
   padding: 0px;
 }
+.footer-mark a{
+  color: #e7e7e7;
+  text-decoration: none;
+}
 .footer-logo{
   width: 70px;
   height: 70px;
@@ -238,4 +242,8 @@ section h2 + p {
   justify-content: flex-end;
   align-items:start;
   gap: 20px;
+}
+.footer-menu a{
+  text-decoration: none;
+  color: #e7e7e7;
 }
