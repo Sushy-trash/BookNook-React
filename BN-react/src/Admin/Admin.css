@@ -1,6 +1,12 @@
 .admin-page {
   min-height: 100vh;
   background: #f5f6ee;
+  color: #292d25;
+}
+
+.admin-page .site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #dfe3d6;
 }
 
 .admin-login {
@@ -8,4 +14,35 @@
   margin: 0 auto;
   border-color: #dfe3d6;
   border-radius: 12px;
+}
+
+.admin-page .card {
+  border-color: #dfe3d6;
+  border-radius: 12px;
+}
+
+.admin-page .eyebrow {
+  color: #65734e;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.admin-page .table thead th {
+  background: #eef0e7;
+  color: #292d25;
+}
+
+.admin-page .table {
+  margin-bottom: 0;
+}
+
+.admin-page .btn-dark {
+  background-color: #424d36;
+  border-color: #424d36;
+}
+
+.admin-page .btn-dark:hover {
+  background-color: #303a27;
+  border-color: #303a27;
 }
