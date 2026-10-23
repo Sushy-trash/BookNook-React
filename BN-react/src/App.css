@@ -25,7 +25,7 @@ section h2 + p {
   top: 0;
   background-color: #818181;
   padding: 8px;
-  width: 1125px;
+  width: 100%;
   text-align: center;
   border-bottom: 1px solid #515250;
   backdrop-filter: blur(12px);
@@ -132,12 +132,12 @@ section h2 + p {
 .container-gif{
   font-size: 1.0rem;
   font-style: italic;
-  display: inline-flex;
-  align-content:baseline;
+  display: flex;
+  align-content:center;
 }
 .gif{
   width: 100%;
-  max-width: 400px;
+  max-width: 400px; 
   height: auto;
   object-fit: cover;
 
