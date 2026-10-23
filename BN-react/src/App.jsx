@@ -9,9 +9,11 @@ import Nosotros from './component/Nosotros'
 import Footer from './component/Footer'
 import Login from './component/Login'
 import CreacionUsuario from './component/CreacionUsuario'
+import Carrito from './component/Carrito'
 
 function App() {
   const [vistaUsuario, setVistaUsuario] = useState('inicio');
+  const [mostrarCarrito, setMostrarCarrito] = useState(false);
   const [carrito, setCarrito] = useState(() => {
     const carritoGuardado = localStorage.getItem('booknookCarrito');
     return carritoGuardado ? JSON.parse(carritoGuardado) : [];
@@ -65,12 +67,45 @@ function App() {
     });
   }
 
+  function aumentarCantidad(id) {
+    setCarrito((carritoActual) =>
+        carritoActual.map((producto) =>
+            producto.id === id
+                ? { ...producto, cantidad: producto.cantidad + 1 }
+                : producto
+        )
+    );
+  }
+
+  function disminuirCantidad(id) {
+    setCarrito((carritoActual) =>
+        carritoActual
+            .map((producto) =>
+                producto.id === id
+                    ? { ...producto, cantidad: producto.cantidad - 1 }
+                    : producto
+            )
+            .filter((producto) => producto.cantidad > 0)
+    );
+  }
+
+  function eliminarProducto(id) {
+    setCarrito((carritoActual) =>
+        carritoActual.filter((producto) => producto.id !== id)
+    );
+  }
+
   return (
     <>
-      <Header 
+      <Header
         onLoginClick={abrirLogin}
         usuarioActual={usuarioActual}
         onLogout={cerrarSesion}
+        onCarritoClick={() => setMostrarCarrito(true)}
+        cantidadCarrito={carrito.reduce(
+          (total, producto) => total + producto.cantidad,
+          0
+        )}
       />
 
         {vistaUsuario === 'login' ? ( 
@@ -83,17 +118,28 @@ function App() {
             onVolverLogin={abrirLogin} 
           /> 
         ) : (
-      
-          <main>
-            <Inicio/>
+
+          mostrarCarrito ? (
+          <Carrito
+              carrito={carrito}
+              onAumentarCantidad={aumentarCantidad}
+              onDisminuirCantidad={disminuirCantidad}
+              onEliminarProducto={eliminarProducto}
+              onVolverCatalogo={() => setMostrarCarrito(false)}
+          />
+          ) : (
+        
+            <main>
+              <Inicio/>
 
 
-            <Catalogo onAgregarAlCarrito={agregarAlCarrito} />
+              <Catalogo onAgregarAlCarrito={agregarAlCarrito} />
 
 
-            <Nosotros/>
+              <Nosotros/>
 
-          </main>
+            </main>
+          )
         )}
       <Footer/>
     </>
