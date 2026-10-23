@@ -5,7 +5,8 @@ export default function Header({
     usuarioActual,
     onLogout,
     onCarritoClick,
-    cantidadCarrito
+    cantidadCarrito,
+    onInicioClick
 }) {
     const [open, setOpen] = useState(false);
     return(
@@ -15,7 +16,13 @@ export default function Header({
                 <a className="skip-link" href="#inicio"><Logo/></a>
                 
                 <nav className="header-navegacion">
-                    <a className="navegacion-link" href="#inicio">Inicio</a>
+                    <a
+                        className="navegacion-link"
+                        href="#inicio"
+                        onClick={onInicioClick}
+                    >
+                        Inicio
+                    </a>
                     <a className="navegacion-link" href="#catalogo">Catálogo</a>
                     <a className="navegacion-link" href="#nosotros">Nosotros</a>
                     <a className="navegacion-link" href="#contacto">Contacto</a>

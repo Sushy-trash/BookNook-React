@@ -62,7 +62,7 @@ return (
                     </p>
 
                     <div className="contact-note">
-                        <span aria-hidden="true">📚</span>
+                        <span aria-hidden="true">🫵 👀</span>
 
                         <p>
                             Cada historia importa.
