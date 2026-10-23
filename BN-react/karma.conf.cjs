@@ -52,7 +52,7 @@ module.exports = function (config) {
 
        plugins: [["istanbul", {
 
-        include: ["src/components/**/*.jsx"],
+        include: ["src/component/**/*.jsx"],
 
         exclude: ["**/*.spec.jsx"]
 
