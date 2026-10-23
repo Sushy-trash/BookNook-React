@@ -5,7 +5,7 @@ import "./Catalogo.css";
 import "./Producto.css"
 import Producto from "./Producto";
 
-export default function Catalogo() {
+export default function Catalogo({ onAgregarAlCarrito }) {
     const [productoSeleccionado, setProductoSeleccionado] = useState(null);
 
     return (
@@ -77,6 +77,16 @@ export default function Catalogo() {
                                         productoSeleccionado.precio
                                     ).toLocaleString("es-CL")}
                                 </p>
+                                
+                                <button
+                                    className="producto-boton"
+                                    type="button"
+                                    onClick={() => {
+                                        onAgregarAlCarrito(productoSeleccionado);
+                                    }}
+                                >
+                                    Agregar al carrito
+                                </button>
 
                                 <button
                                     className="producto-boton"

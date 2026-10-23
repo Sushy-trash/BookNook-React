@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import './App.css'
 
@@ -12,6 +12,13 @@ import CreacionUsuario from './component/CreacionUsuario'
 
 function App() {
   const [vistaUsuario, setVistaUsuario] = useState('inicio');
+  const [carrito, setCarrito] = useState(() => {
+    const carritoGuardado = localStorage.getItem('booknookCarrito');
+    return carritoGuardado ? JSON.parse(carritoGuardado) : [];
+  });
+  useEffect(() => {
+    localStorage.setItem('booknookCarrito', JSON.stringify(carrito));
+  }, [carrito]);
   const [usuarioActual, setUsuarioActual] = useState(() => {
       const usuarioGuardado = localStorage.getItem('booknookUsuarioActual');
 
@@ -37,6 +44,27 @@ function App() {
     setVistaUsuario('inicio');
   }
 
+  function agregarAlCarrito(producto) {
+    setCarrito((carritoActual) => {
+        const productoExiste = carritoActual.find(
+            (item) => item.id === producto.id
+        );
+
+        if (productoExiste) {
+            return carritoActual.map((item) =>
+                item.id === producto.id
+                    ? { ...item, cantidad: item.cantidad + 1 }
+                    : item
+            );
+        }
+
+        return [
+            ...carritoActual,
+            { ...producto, cantidad: 1 }
+        ];
+    });
+  }
+
   return (
     <>
       <Header 
@@ -60,7 +88,7 @@ function App() {
             <Inicio/>
 
 
-            <Catalogo/>
+            <Catalogo onAgregarAlCarrito={agregarAlCarrito} />
 
 
             <Nosotros/>
