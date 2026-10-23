@@ -5,7 +5,7 @@ export default function Inicio({ onAbrirBlog }) {
         <section id="inicio" className="inicio">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-md-6">
+                    <div className="col-md-6 botones-inicio">
                         <h1>Tu próxima historia
 
                             <br/>
@@ -20,7 +20,7 @@ export default function Inicio({ onAbrirBlog }) {
                         </a>
                         <button
                             type="button"
-                            className="btn btn-outline-dark mt-3"
+                            className="btn btn-outline-dark mt-3 button-blog"
                             onClick={onAbrirBlog}
                         >
                             Visitar nuestro blog

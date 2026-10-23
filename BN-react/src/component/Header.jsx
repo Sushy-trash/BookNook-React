@@ -35,19 +35,19 @@ export default function Header({
                         🛒 Carrito ({cantidadCarrito})
                     </button>
                     {usuarioActual ? (
-                        <>
+                        <div className="header-user">
                             <span className="usuario-saludo">
                                 ¡Hola, {usuarioActual.nombre}!
                             </span>
 
                             <button
                                 type="button"
-                                className="btn btn-outline-dark"
+                                className="btn btn-outline-dark header-closeSession"
                                 onClick={onLogout}
                             >
                                 Cerrar sesión
                             </button>
-                        </>
+                        </div>
                     ) : (
                         <button
                             type="button"
