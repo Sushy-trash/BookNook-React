@@ -75,6 +75,9 @@
 .modal-informacion {
     flex: 1;
     min-width: 0;
+    display:grid;
+    gap: 20px;
+    color: black;
 }
 
 .modal-informacion h2 {
@@ -84,7 +87,9 @@
 .modal-descripcion {
     line-height: 1.7;
     margin: 20px 0;
+    
 }
+
 
 @keyframes aparecer-modal {
     from {

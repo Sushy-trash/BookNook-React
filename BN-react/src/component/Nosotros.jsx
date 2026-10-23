@@ -11,28 +11,38 @@ export default function Nosotros(){
             <div className="integrantes">
                 <h1>Colaboradores</h1>
                 <article className="nosotros-integrante">
+                    
                     <img src="./src/assets/filthy-frank-pink-guy.gif" 
-                        className="nosotros-gif"
-                        alt="gif represetnativo del compañero">
+                    className="nosotros-gif"
+                    alt="gif represetnativo del compañero">
                     </img>
-                    <h3>Sushy-Trash</h3>
-                    <p>Friki N#1</p>
-                    <p>Especialista en Mangas, Cómics y en hacer bonita la página. </p>
-                    <p>CEO de Polystation</p>
+                    <div className="integrante-info">
+                        <h3>Sushy-Trash</h3>
+                        <p>Friki N#1</p>
+                        <p>Especialista en Mangas, Cómics y en hacer bonita la página. </p>
+                        <p>CEO de Polystation</p>
+                    </div>
+                    
+                    
                     
                 </article>
+
                 <article className="nosotros-integrante">
                     <img src="./src/assets/mapache gif.gif"
                         className="nosotros-gif"
                         alt="gif representativo de la compañera">
                     </img>
-                    <h3>Schatten7u7</h3>
-                    <p>Queen ñoñística.</p>
-                    <p>Especialista en Novelas, Fantasía y Sci-Fi.</p>
-                    <p>Encargada de hacer que la página funcione (spoiler,funciona mejor que la anterior). </p>
-                    <p>Ministra de Defensa de Lemuria</p>
-
+                    
+                    <div className="integrante-info">
+                        <h3>Schatten7u7</h3>
+                        <p>Queen ñoñística.</p>
+                        <p>Especialista en Novelas, Fantasía y Sci-Fi.</p>
+                        <p>Encargada de hacer que la página funcione (spoiler,funciona mejor que la anterior). </p>
+                        <p>Ministra de Defensa de Lemuria</p>
+                    </div>
+                       
                 </article>
+    
 
             </div>
         </section>

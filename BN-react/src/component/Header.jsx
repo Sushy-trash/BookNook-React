@@ -22,7 +22,7 @@ export default function Header({
                     <a className="navegacion-link" href="/admin.html">Admin</a>
                     <button
                         type="button"
-                        className="btn btn-outline-dark"
+                        className="btn btn-outline-dark header-carrito"
                         onClick={onCarritoClick}
                     >
                         🛒 Carrito ({cantidadCarrito})
@@ -44,7 +44,7 @@ export default function Header({
                     ) : (
                         <button
                             type="button"
-                            className="btn btn-outline-dark"
+                            className="btn btn-outline-dark header-login"
                             onClick={onLoginClick}
                         >
                             Login
