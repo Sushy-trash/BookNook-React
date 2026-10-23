@@ -37,7 +37,7 @@ export default function Inicio({ onAbrirBlog }) {
 
                 </div>
                 
-                <h1>Explora un mundo LLeno de creatividad y misterios inexplicables</h1>
+                <h1>Explora un mundo lleno de creatividad y misterios inexplicables</h1>
                 <video className="gif" src="./src/assets/persona leyendo.mp4" loop autoPlay muted playsInline></video>
                 
             </div>
