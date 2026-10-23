@@ -30,9 +30,20 @@ function App() {
       setUsuarioActual(usuario);
       setVistaUsuario('inicio');
   }
+
+  function cerrarSesion() {
+    localStorage.removeItem('booknookUsuarioActual');
+    setUsuarioActual(null);
+    setVistaUsuario('inicio');
+  }
+
   return (
     <>
-      <Header onLoginClick={abrirLogin}/>
+      <Header 
+        onLoginClick={abrirLogin}
+        usuarioActual={usuarioActual}
+        onLogout={cerrarSesion}
+      />
 
         {vistaUsuario === 'login' ? ( 
           <Login 
