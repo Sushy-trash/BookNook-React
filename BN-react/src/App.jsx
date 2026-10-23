@@ -6,6 +6,7 @@ import Header from './component/Header'
 import Inicio from './component/Inicio'
 import Catalogo from './component/Catalogo'
 import Nosotros from './component/Nosotros'
+import Contacto from './component/Contacto'
 import Footer from './component/Footer'
 import Login from './component/Login'
 import CreacionUsuario from './component/CreacionUsuario'
@@ -132,11 +133,11 @@ function App() {
             <main>
               <Inicio/>
 
-
               <Catalogo onAgregarAlCarrito={agregarAlCarrito} />
 
-
               <Nosotros/>
+
+              <Contacto />
 
             </main>
           )

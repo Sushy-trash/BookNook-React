@@ -1,0 +1,59 @@
+.contact-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.contact-section h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section .eyebrow {
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+}
+
+.contact-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1.25rem;
+    border-radius: 8px;
+    background-color: #f5f1e9;
+}
+
+.contact-note span {
+    font-size: 1.5rem;
+}
+
+.contact-note p {
+    margin-bottom: 0;
+}
+
+.contact-form {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.contact-form .form-label {
+    font-weight: 600;
+}
+
+.form-disclaimer {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.form-status {
+    margin-top: 1rem;
+}
+
+@media (max-width: 576px) {
+    .contact-form {
+        padding: 1rem;
+    }
+}
