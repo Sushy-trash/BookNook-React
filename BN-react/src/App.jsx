@@ -7,6 +7,8 @@ import Inicio from './component/Inicio'
 import Catalogo from './component/Catalogo'
 import Nosotros from './component/Nosotros'
 import Contacto from './component/Contacto'
+import Blog from './Blog/Blog'
+import BlogArticulo from './Blog/BlogArticulo'
 import Footer from './component/Footer'
 import Login from './component/Login'
 import CreacionUsuario from './component/CreacionUsuario'
@@ -15,6 +17,8 @@ import Carrito from './component/Carrito'
 function App() {
   const [vistaUsuario, setVistaUsuario] = useState('inicio');
   const [mostrarCarrito, setMostrarCarrito] = useState(false);
+  const [articuloSeleccionado, setArticuloSeleccionado] = useState(null);
+  const [vistaBlog, setVistaBlog] = useState(false);
   const [carrito, setCarrito] = useState(() => {
     const carritoGuardado = localStorage.getItem('booknookCarrito');
     return carritoGuardado ? JSON.parse(carritoGuardado) : [];
@@ -100,6 +104,12 @@ function App() {
     <>
       <Header
         onLoginClick={abrirLogin}
+        onInicioClick={() => {
+            setVistaUsuario('inicio');
+            setVistaBlog(false);
+            setArticuloSeleccionado(null);
+            setMostrarCarrito(false);
+        }}
         usuarioActual={usuarioActual}
         onLogout={cerrarSesion}
         onCarritoClick={() => setMostrarCarrito(true)}
@@ -128,10 +138,20 @@ function App() {
               onEliminarProducto={eliminarProducto}
               onVolverCatalogo={() => setMostrarCarrito(false)}
           />
+          ) : articuloSeleccionado !== null ? (
+              <BlogArticulo
+                  articuloId={articuloSeleccionado}
+                  onVolverBlog={() => setArticuloSeleccionado(null)}
+                  onSeleccionarArticulo={setArticuloSeleccionado}
+              />
+          ) : vistaBlog ? (
+              <Blog
+                  onSeleccionarArticulo={setArticuloSeleccionado}
+              />
           ) : (
         
             <main>
-              <Inicio/>
+              <Inicio onAbrirBlog={() => setVistaBlog(true)} />
 
               <Catalogo onAgregarAlCarrito={agregarAlCarrito} />
 

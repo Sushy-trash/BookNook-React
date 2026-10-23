@@ -1,6 +1,6 @@
 import gif from "../assets/persona leyendo.mp4";
 
-export default function Inicio() {
+export default function Inicio({ onAbrirBlog }) {
     return (
         <section id="inicio" className="inicio">
             <div className="container">
@@ -18,6 +18,13 @@ export default function Inicio() {
                         <a href="#catalogo" className="button-catalogo">
                             Aventurarse al catálogo       
                         </a>
+                        <button
+                            type="button"
+                            className="btn btn-outline-dark mt-3"
+                            onClick={onAbrirBlog}
+                        >
+                            Visitar nuestro blog
+                        </button>
                     </div>
 
                     <div className="col-md-6">
