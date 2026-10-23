@@ -5,7 +5,7 @@ export default function Nosotros(){
                 <h1>Sobre Nosotros</h1>
                 <p> BookNook nació de dos frikis que tenían que hacer un proyecto para fullstack II e intentaron no manquearla en el proceso.
                     Nos especializamos en cosas frikis, como literatura fantástica, Sci-Fi, Mangas, Cómics, Novelas y algunos artículos para lectores.
-                    Nuestro objetivo es ofrecer un espacio para encontrar la lectura que buscas, y también aprobar el ramo...Por segunda vez
+                    Nuestro objetivo es ofrecer un espacio para encontrar la lectura que buscas, y también aprobar el ramo... Por segunda vez
                 </p>
             </div>
             <div className="integrantes">
@@ -16,7 +16,7 @@ export default function Nosotros(){
                         alt="gif represetnativo del compañero">
                     </img>
                     <h3>Sushy-Trash</h3>
-                    <p>Friki n1</p>
+                    <p>Friki N#1</p>
                     <p>Especialista en Mangas, Cómics y en hacer bonita la página. </p>
                     <p>CEO de Polystation</p>
                     
@@ -29,12 +29,10 @@ export default function Nosotros(){
                     <h3>Schatten7u7</h3>
                     <p>Queen ñoñística.</p>
                     <p>Especialista en Novelas, Fantasía y Sci-Fi.</p>
-                    <p>Encargada de hacer que la página funcione (spoiler,funciona mejor que el anterior). </p>
+                    <p>Encargada de hacer que la página funcione (spoiler,funciona mejor que la anterior). </p>
                     <p>Ministra de Defensa de Lemuria</p>
-                    
 
                 </article>
-
 
             </div>
         </section>

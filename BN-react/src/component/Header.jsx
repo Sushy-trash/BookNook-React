@@ -16,7 +16,7 @@ export default function Header({
                 
                 <nav className="header-navegacion">
                     <a className="navegacion-link" href="#inicio">Inicio</a>
-                    <a className="navegacion-link" href="#catalogo">Catalogo</a>
+                    <a className="navegacion-link" href="#catalogo">Catálogo</a>
                     <a className="navegacion-link" href="#nosotros">Nosotros</a>
                     <a className="navegacion-link" href="/admin.html">Admin</a>
                     <button

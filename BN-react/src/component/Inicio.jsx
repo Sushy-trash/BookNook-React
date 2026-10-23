@@ -6,17 +6,17 @@ export default function Inicio() {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-6">
-                        <h1>Tu proxima historia
+                        <h1>Tu próxima historia
 
                             <br/>
-                            Comienza aqui.
+                            Comienza aquí.
                         </h1>
                         <p>
-                            Descubre una variedad de mangas, comics, novelas y mucho mas
-                            en NookBook,tu rincon de lectura fantastica. Sumergete en mundos imaginarios y vive aventuras inimaginables.
+                            Descubre una variedad de mangas, cómics, novelas y mucho más
+                            en BookNook,tu rincón de lectura fantástica. Sumérgete en mundos imaginarios y vive aventuras inimaginables.
                         </p>
                         <a href="#catalogo" className="button-catalogo">
-                            Aventurarse al catalogo       
+                            Aventurarse al catálogo       
                         </a>
                     </div>
 
@@ -28,23 +28,15 @@ export default function Inicio() {
                         />
                     </div>
 
-
-
                 </div>
                 
-                <h1>Explora un mundo LLeno de Creatividad y misterios inexplicables</h1>
+                <h1>Explora un mundo LLeno de creatividad y misterios inexplicables</h1>
                 <video className="gif" src="./src/assets/persona leyendo.mp4" loop autoPlay muted playsInline></video>
                 
             </div>
-            
-
-
-            
+              
         </section>
 
-
-
     )
-
 
 }
